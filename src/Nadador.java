@@ -7,12 +7,6 @@ public class Nadador extends Deportista{
     public Nadador() {
     }
 
-    public Nadador(double distancia, double tiempo, String estilo) {
-        this.distancia = distancia;
-        this.tiempo = tiempo;
-        this.estilo = estilo;
-    }
-
     public Nadador(String nombre, int edad, String pais, int horasEntrenamiento, double distancia, double tiempo, String estilo) {
         super(nombre, edad, pais, horasEntrenamiento);
         this.distancia = distancia;
@@ -44,18 +38,7 @@ public class Nadador extends Deportista{
         this.estilo = estilo;
     }
 
-    @Override
-    public String toString() {
-        return "Nadador{" +
-                "horasEntrenamiento=" + horasEntrenamiento +
-                ", pais='" + pais + '\'' +
-                ", edad=" + edad +
-                ", nombre='" + nombre + '\'' +
-                ", estilo='" + estilo + '\'' +
-                ", tiempo=" + tiempo +
-                ", distancia=" + distancia +
-                '}';
-    }
+
 
 
     public double calcularVelocidad(){
@@ -93,5 +76,13 @@ public class Nadador extends Deportista{
 
 
         return rendimientoBase + bono;
+    }
+
+    public void mostrarDetalles(){
+
+        System.out.println("Distancia"+ distancia);
+        System.out.println("Tiempo"+ tiempo);
+        System.out.println("Estilo"+ estilo);
+
     }
 }

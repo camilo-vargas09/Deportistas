@@ -6,14 +6,12 @@ public class Corredor extends Deportista{
     public Corredor() {
     }
 
-    public Corredor(double distancia, double tiempo) {
+    public Corredor(String nombre, int edad, String pais, int horasEntrenamiento, double distancia, double tiempo) {
+        super(nombre, edad, pais, horasEntrenamiento);
         this.distancia = distancia;
         this.tiempo = tiempo;
     }
 
-    public Corredor(String nombre, int edad, String pais, int horasEntrenamiento) {
-        super(nombre, edad, pais, horasEntrenamiento);
-    }
 
     public double getDistancia() {
         return distancia;
@@ -34,12 +32,12 @@ public class Corredor extends Deportista{
     @Override
     public String toString() {
         return "Corredor{" +
-                "distancia=" + distancia +
-                ", tiempo=" + tiempo +
-                ", nombre='" + nombre + '\'' +
+                "nombre='" + nombre + '\'' +
                 ", edad=" + edad +
                 ", pais='" + pais + '\'' +
                 ", horasEntrenamiento=" + horasEntrenamiento +
+                ", distancia=" + distancia +
+                ", tiempo=" + tiempo +
                 '}';
     }
 

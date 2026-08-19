@@ -4,13 +4,8 @@ public class Ciclista extends Deportista{
     private double tiempo;
     private double desnivel;
 
-    public Ciclista() {
-    }
 
-    public Ciclista(double distancia, double tiempo, double desnivel) {
-        this.distancia = distancia;
-        this.tiempo = tiempo;
-        this.desnivel = desnivel;
+    public Ciclista() {
     }
 
     public Ciclista(String nombre, int edad, String pais, int horasEntrenamiento, double distancia, double tiempo, double desnivel) {
@@ -47,13 +42,13 @@ public class Ciclista extends Deportista{
     @Override
     public String toString() {
         return "Ciclista{" +
-                "distancia=" + distancia +
-                ", tiempo=" + tiempo +
-                ", desnivel=" + desnivel +
-                ", nombre='" + nombre + '\'' +
+                "nombre='" + nombre + '\'' +
                 ", edad=" + edad +
                 ", pais='" + pais + '\'' +
                 ", horasEntrenamiento=" + horasEntrenamiento +
+                ", distancia=" + distancia +
+                ", tiempo=" + tiempo +
+                ", desnivel=" + desnivel +
                 '}';
     }
 
