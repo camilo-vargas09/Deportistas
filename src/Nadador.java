@@ -38,8 +38,18 @@ public class Nadador extends Deportista{
         this.estilo = estilo;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Nadador{" +
+                "distancia=" + distancia +
+                ", tiempo=" + tiempo +
+                ", estilo='" + estilo + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", edad=" + edad +
+                ", pais='" + pais + '\'' +
+                ", horasEntrenamiento=" + horasEntrenamiento +
+                '}';
+    }
 
     public double calcularVelocidad(){
         double porcentaje;

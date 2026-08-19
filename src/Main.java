@@ -11,10 +11,12 @@ public class Main {
         Corredor corredor1 = new Corredor("camilo", 19 , "Colombia", 35, 3.45, 15.5);
         Ciclista ciclista1 = new Ciclista("Andres", 20, "Argentina", 58, 248.3, 70, 54);
         Nadador nadador1 = new Nadador("Jacob", 22, "Brasil", 60, 35, 15.2, "Mariposa");
+        Futbolista futbolista1 = new Futbolista("Diego", 24, "Francia", 60, 100, "FC BARCELONA", 50);
 
         lstDeportistas.add(corredor1);
         lstDeportistas.add(ciclista1);
         lstDeportistas.add(nadador1);
+        lstDeportistas.add(futbolista1);
 
         for(Deportista d1 : lstDeportistas){
             System.out.println(d1);
